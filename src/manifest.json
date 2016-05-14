@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Techne",
+  "description": "Web Inspiration Aggregator",
+  "version": "0.1",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon-16.png",
+    "default_popup": "popup.html",
+    "default_title": "Web Inspiration"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/*"
+  ],
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com/; object-src 'self'",
+  "background": {
+    "scripts": ["content/jquery.min.js", "content/md5.min.js", "background/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content/jquery.min.js"]
+    }
+  ]
+}

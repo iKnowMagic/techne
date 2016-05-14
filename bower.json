@@ -1,0 +1,29 @@
+{
+  "name": "web-inspiration",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "jquery": "~1.12.3",
+    "jquery.easing": "^1.3.1",
+    "mq-sass": "^0.3.0",
+    "jquery-touch-events": "^1.0.1",
+    "masonry": "^4.1.0",
+    "bootswatch": "^3.3.6",
+    "vue": "^1.0.24",
+    "js-md5": "md5#^0.4.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
